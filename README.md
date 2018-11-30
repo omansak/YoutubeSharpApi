@@ -39,9 +39,10 @@ With Paging
         };
 
         var response = await youtubeClient.GetTrendingWithPagingAsync(trendingInput, token: new CancellationToken());
-        playlistInput.PageToken = responsePlaylistPaging.NextPage;
+        playlistInput.PageToken = responsePlaylistPaging.NextPage; // important to next page
 
 ```
+Output
 ```c#
         public string Kind { get; set; }
         public string NextPage { get; set; }
