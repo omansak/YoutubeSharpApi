@@ -1,11 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>YoutubeSharpApi</Title>
+    <Description>A minimal .NET STANDART wrapper for the Youtube Data API v3. Designed to let devs easily fetch public data (Playlists info,Trending) from Youtube. The reason of returning the decoded JSON response directly is that you only need to read the Google API doc to use this library.</Description>
+    <Copyright>OMANSAK</Copyright>
+    <PackageProjectUrl>https://github.com/omansak/YoutubeSharpApi</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/omansak/YoutubeSharpApi</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>youtube,youtube .net,youtube cshapar, youtube playlist, youtube video info library winrt wp windows phone pcl portable class library .net framework core compat compatibility api apis layer layers emulator emulators emulation emulations xamarin mono monotouch xamarin.ios ios xamarin.android android</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>

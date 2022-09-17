@@ -1,7 +1,7 @@
 Youtube Sharp Api
 ===============
 
-A minimal .NET CORE wrapper for the Youtube Data API v3. Designed to let devs easily 
+A minimal .NET STANDART wrapper for the Youtube Data API v3. Designed to let devs easily 
 fetch public data (Playlists info,Trending) from Youtube.
 The reason of returning the decoded JSON response directly is that you only need to read the Google API doc 
 to use this library.
